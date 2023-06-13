@@ -1,29 +1,28 @@
                             OLS Regression Results                            
 ==============================================================================
-Dep. Variable:          np.log(renda)   R-squared:                       0.429
-Model:                            OLS   Adj. R-squared:                  0.429
-Method:                 Least Squares   F-statistic:                 2.647e+04
-Date:                Mon, 12 Jun 2023   Prob (F-statistic):               0.00
-Time:                        21:40:54   Log-Likelihood:            -2.8113e+05
-No. Observations:              211153   AIC:                         5.623e+05
-Df Residuals:                  211146   BIC:                         5.624e+05
-Df Model:                           6                                         
+Dep. Variable:                  renda   R-squared:                       0.155
+Model:                            OLS   Adj. R-squared:                  0.154
+Method:                 Least Squares   F-statistic:                     7717.
+Date:                Tue, 13 Jun 2023   Prob (F-statistic):               0.00
+Time:                        14:04:33   Log-Likelihood:            -2.7069e+06
+No. Observations:              211153   AIC:                         5.414e+06
+Df Residuals:                  211147   BIC:                         5.414e+06
+Df Model:                           5                                         
 Covariance Type:            nonrobust                                         
 =================================================================================================
                                     coef    std err          t      P>|t|      [0.025      0.975]
 -------------------------------------------------------------------------------------------------
-sexo_M[False]                     8.2593      0.010    823.628      0.000       8.240       8.279
-sexo_M[True]                      8.3846      0.010    835.582      0.000       8.365       8.404
-posse_de_imovel_True[T.True]      0.1853      0.004     43.162      0.000       0.177       0.194
-posse_de_veiculo_True[T.True]     0.0265      0.004      5.970      0.000       0.018       0.035
-qtd_filhos                        0.0036      0.003      1.248      0.212      -0.002       0.009
-idade                            -0.0046      0.000    -22.768      0.000      -0.005      -0.004
-tempo_emprego                     0.1326      0.000    390.678      0.000       0.132       0.133
+Intercept                     -6.113e+04    942.282    -64.875      0.000    -6.3e+04   -5.93e+04
+sexo_M[T.True]                -4209.8375    454.385     -9.265      0.000   -5100.421   -3319.254
+posse_de_imovel_True[T.True]   4348.3810    418.210     10.398      0.000    3528.701    5168.061
+posse_de_veiculo_True[T.True] -1495.3996    432.443     -3.458      0.001   -2342.977    -647.823
+idade                          -185.4786     18.644     -9.948      0.000    -222.021    -148.937
+I(np.sqrt(tempo_emprego))      3.703e+04    196.413    188.532      0.000    3.66e+04    3.74e+04
 ==============================================================================
-Omnibus:                      268.793   Durbin-Watson:                   1.267
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):              239.482
-Skew:                          -0.041   Prob(JB):                     9.94e-53
-Kurtosis:                       2.856   Cond. No.                         322.
+Omnibus:                   489003.439   Durbin-Watson:                   1.948
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):       7423890330.670
+Skew:                          22.619   Prob(JB):                         0.00
+Kurtosis:                     920.478   Cond. No.                         225.
 ==============================================================================
 
 Notes:

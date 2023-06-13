@@ -8,7 +8,7 @@ def r2_modelo(df_test, modelo):
 
     # Colunas utilizadas para a formula patsy 
     colunas_modelo = ['sexo_M', 'posse_de_imovel_True', 
-                    'qtd_filhos', 'posse_de_veiculo_True', 
+                    'posse_de_veiculo_True', 
                     'idade', 'tempo_emprego', 'renda']
 
     X_test = df_test[colunas_modelo]

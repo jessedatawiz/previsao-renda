@@ -15,7 +15,7 @@ def modelo_sqrt(df_train: pd.DataFrame):
 
     formula = ('renda ~ '
            ' + sexo_M + '
-           'posse_de_imovel_True + qtd_filhos + '
+           'posse_de_imovel_True  + '
            'posse_de_veiculo_True + '
            'idade + '
            'I(np.sqrt(tempo_emprego))')

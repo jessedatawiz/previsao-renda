@@ -19,7 +19,7 @@ def modelo_pol(df: pd.DataFrame):
 
     formula = ('renda ~ '
            ' + sexo_M + '
-           'posse_de_imovel_True + qtd_filhos + '
+           'posse_de_imovel_True  + '
            'posse_de_veiculo_True + '
            'idade + '
            'I(tempo_emprego) + I(tempo_emprego**2) + I(tempo_emprego**3)')

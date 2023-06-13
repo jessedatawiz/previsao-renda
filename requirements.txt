@@ -1,0 +1,17 @@
+matplotlib==3.7.1
+matplotlib-inline==0.1.6
+numpy==1.22.3
+pandas==2.0.1
+patsy==0.5.3
+pipenv==2023.2.18
+plotly==5.14.0
+pymatgen==2023.3.23
+Pympler==1.0.1
+scikit-image==0.19.3
+scikit-learn==1.2.2
+scipy==1.8.1
+seaborn==0.12.2
+streamlit==1.22.0
+sympy==1.11.1
+virtualenv==20.21.0
+virtualenv-clone==0.5.7

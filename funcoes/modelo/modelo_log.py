@@ -16,7 +16,7 @@ def modelo_log(df: pd.DataFrame):
 
     formula = ('np.log(renda) ~ '
            ' + sexo_M + '
-           'posse_de_imovel_True + qtd_filhos + '
+           'posse_de_imovel_True + '
            'posse_de_veiculo_True + '
            'idade + '
            'tempo_emprego -1')

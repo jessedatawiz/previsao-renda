@@ -2,33 +2,32 @@
 ==============================================================================
 Dep. Variable:                  renda   R-squared:                       0.397
 Model:                            OLS   Adj. R-squared:                  0.397
-Method:                 Least Squares   F-statistic:                 1.739e+04
-Date:                Mon, 12 Jun 2023   Prob (F-statistic):               0.00
-Time:                        21:41:03   Log-Likelihood:            -2.6712e+06
+Method:                 Least Squares   F-statistic:                 1.987e+04
+Date:                Tue, 13 Jun 2023   Prob (F-statistic):               0.00
+Time:                        14:04:35   Log-Likelihood:            -2.6712e+06
 No. Observations:              211153   AIC:                         5.342e+06
-Df Residuals:                  211144   BIC:                         5.342e+06
-Df Model:                           8                                         
+Df Residuals:                  211145   BIC:                         5.342e+06
+Df Model:                           7                                         
 Covariance Type:            nonrobust                                         
 =================================================================================================
                                     coef    std err          t      P>|t|      [0.025      0.975]
 -------------------------------------------------------------------------------------------------
-Intercept                      4741.8654    864.539      5.485      0.000    3047.390    6436.340
-sexo_M[T.True]                -3342.6028    383.827     -8.709      0.000   -4094.894   -2590.311
-posse_de_imovel_True[T.True]   5163.3434    353.659     14.600      0.000    4470.181    5856.506
-posse_de_veiculo_True[T.True]   -41.3706    365.567     -0.113      0.910    -757.873     675.132
-qtd_filhos                      232.0831    240.285      0.966      0.334    -238.870     703.036
-idade                          -111.2862     16.993     -6.549      0.000    -144.591     -77.981
-I(tempo_emprego)               3063.3447    138.637     22.096      0.000    2791.619    3335.070
-I(tempo_emprego ** 2)          -302.6288     10.565    -28.646      0.000    -323.335    -281.922
-I(tempo_emprego ** 3)            17.7087      0.216     82.037      0.000      17.286      18.132
+Intercept                      5060.3788    799.174      6.332      0.000    3494.018    6626.740
+sexo_M[T.True]                -3333.0566    383.700     -8.687      0.000   -4085.098   -2581.015
+posse_de_imovel_True[T.True]   5177.3578    353.361     14.652      0.000    4484.779    5869.937
+posse_de_veiculo_True[T.True]   -26.7771    365.255     -0.073      0.942    -742.668     689.113
+idade                          -117.0380     15.915     -7.354      0.000    -148.231     -85.845
+I(tempo_emprego)               3066.5033    138.598     22.125      0.000    2794.854    3338.153
+I(tempo_emprego ** 2)          -302.7132     10.564    -28.655      0.000    -323.419    -282.008
+I(tempo_emprego ** 3)            17.7084      0.216     82.036      0.000      17.285      18.132
 ==============================================================================
-Omnibus:                   495484.519   Durbin-Watson:                   1.932
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):      11862471527.988
+Omnibus:                   495486.340   Durbin-Watson:                   1.932
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):      11862646530.446
 Skew:                          23.146   Prob(JB):                         0.00
-Kurtosis:                    1163.244   Cond. No.                     3.09e+04
+Kurtosis:                    1163.252   Cond. No.                     2.86e+04
 ==============================================================================
 
 Notes:
 [1] Standard Errors assume that the covariance matrix of the errors is correctly specified.
-[2] The condition number is large, 3.09e+04. This might indicate that there are
+[2] The condition number is large, 2.86e+04. This might indicate that there are
 strong multicollinearity or other numerical problems.

@@ -12,6 +12,10 @@ def residuos_por_mes(df_original: pd.DataFrame, df_dummie: pd.DataFrame, residuo
 
         if 'data_ref' in df_original.columns:
             df_dummie['data_ref'] = df_original['data_ref']
+        
+        # Remove a coluna não utilizada no no modelo
+        if 'qt_pessoas_residencia' in df_dummie.columns:
+            df_dummie.drop('qt_pessoas_residencia', axis=1)
 
         df_dummie['Residuos'] = residuos
         sns.boxplot(data=df_dummie, x=df_dummie['data_ref'].dt.month, y='Residuos',
@@ -20,7 +24,7 @@ def residuos_por_mes(df_original: pd.DataFrame, df_dummie: pd.DataFrame, residuo
         plt.xlabel('Mês de Referência')
         plt.ylabel('Resíduos')
         plt.title('Relação entre Resíduos e Mês')
-        plt.savefig(f'./output/residious_mes_{modelo_tipo}.png')
+        plt.savefig(f'./output/residous_mes_{modelo_tipo}.png')
         plt.show()
 
     except Exception as e:
