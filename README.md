@@ -16,7 +16,7 @@ Este projeto tem como objetivo desenvolver um modelo de regressão linear para p
 * Consulte o diretório [modelo](./funcoes/modelo) para ajustar o modelo de regressão linear.
 * Consulte o diretório [metrica_modelo](./funcoes/metrica_modelo/) para avaliar o modelo e obter métricas de desempenho.
 * Consulte o diretório [outliers](./funcoes/outliers/) para identificar e remover outliers.
-* Execute o arquivo app.py para executar o projeto no [Streamlit](./streamlit_env/) e utilizar a interface interativa.
+* Os arquivos/gráficos resultantes estão salvos em [output](./output)
 
 ## Contribuição
 
